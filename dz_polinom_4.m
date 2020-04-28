@@ -1,0 +1,12 @@
+n = 3;
+p = [1,0,-n,0,n,0,-1];
+x = linspace(-100,100,1000);
+f = polyval(p,x);
+plot(x,f);
+grid on;
+hold on;
+x1 = 0;
+y = linspace(-100,100,1000);
+f1 = polyval(x1,y);
+plot(y,f1);
+grid on;
