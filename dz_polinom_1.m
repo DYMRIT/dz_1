@@ -1,0 +1,13 @@
+P = [1,-3.55, 5.1, -3.1];
+x = linspace(-10,10,100);
+F = polyval(P,x);
+plot(x,F);
+grid on;
+hold on;
+x1 = 0;
+y = linspace(-10, 10,100);
+F1 = polyval(x1,y);
+plot(y,F1);
+grid on;
+R = roots(P);
+disp(R);
