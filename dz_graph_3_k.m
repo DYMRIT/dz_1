@@ -1,0 +1,10 @@
+a = input("a = ");
+mu = input("mu = ");
+w = input("w = ");
+fi = input("fi = ");
+[r,u] = meshgrid(-2:0.1:2,-pi:pi/12:pi);
+x = r.*cos(u);
+y = r.*sin(u);
+z = a*exp(-mu*r).*sin(w.*r+fi);
+surf(x,y,z);
+title("ѕоверхность с затухающими окружными волнами");
