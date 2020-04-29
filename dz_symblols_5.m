@@ -1,0 +1,10 @@
+syms x y;
+disp("first");
+otv1 = symsum(1./(k+1)^2,k,0,inf);
+disp(otv1);
+disp("second");
+otv2 = symsum((-1).^((n^2+n)/2).*n./2.^n,x,0,inf);
+disp(otv2);
+disp("fourth");
+otv4 =symsum((3-x).^(2*y)./sqrt(y),y,1,inf);
+disp(otv4);

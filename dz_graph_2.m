@@ -1,0 +1,12 @@
+disp("first(plot3)");
+[x1,y1] = meshgrid(-10:0.5:10,-10:0.5:10);
+a = 10;
+b = sqrt(x.^2-y.^2);
+z1 = a .* sin(b)./b;
+figure;
+plot3(x1,y1,z1);
+disp("second(mesh)");
+[x,y] = meshgrid(-10:0.5:10,-10:0.5:10);
+z = -x.*sin(x)-y.*cos(y);
+figure;
+mesh(x,y,z);

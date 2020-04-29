@@ -1,0 +1,13 @@
+syms x y;
+disp("first");
+f1 = (sqrt(1-x^2))./x^2;
+otv1 = int(f1);
+disp(otv1);
+disp("second");
+f2 = 1/sin(x)^3;
+otv2 = int(f2);
+disp(otv2);
+disp("fifth");
+f5 =1/(1+x^2);
+otv5 = int(f5,0,inf);
+disp(otv5);

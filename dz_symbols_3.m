@@ -1,0 +1,16 @@
+syms x y;
+disp("first");
+f1 = atan(x)/2 - x./(2*(1+x.^2).^2);
+f1 = diff(f1);
+otv1 = simplify(f1);
+disp(otv1);
+disp("second");
+f2 = 3*x^4 - 14*x^3+12*x^2+24*x+6;
+f2 = diff(f2);
+otv2 = simplify(f2);
+disp(otv2);
+disp("third");
+f3 = (sin(3*x)-cos(3*x)).^2;
+f3 = diff(f3);
+otv3 = simplify(f3);
+disp(otv3);
