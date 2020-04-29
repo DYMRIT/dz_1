@@ -1,0 +1,10 @@
+r3 = -10:0.1:10;
+p = input("p = ");
+beta3= -2:0.1:2;
+[Beta3,R3] = meshgrid(beta3,r3);
+x3 = R3.*cos(Beta3);
+y3 = R3.*sin(Beta3);
+z3 = (R3.^2/(2*p)).*ones(size(Beta3));
+figure;
+mesh(x3,y3,z3);
+title("Параболоид вращения");
