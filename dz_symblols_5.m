@@ -1,9 +1,9 @@
-syms n k;
+syms n x;
 disp("first");
 otv1 = symsum(1/(n+1)^2,n,0,inf);
 disp(otv1);
 disp("second");
-otv2 = symsum(n/2^n,n,0,inf);
+otv2 = symsum(((-1).^((n.^2+n)/2).*n)./2.^n,n,0,inf);
 disp(otv2);
 disp("third");
 otv3 =symsum(x^n,n,0,inf);
